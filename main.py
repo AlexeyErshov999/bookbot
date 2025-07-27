@@ -15,7 +15,7 @@ def main(path):
         char = item["char"]
         if not char.isalpha():
             continue
-        char_lines.append(f"'{char}': {item['num']}")
+        char_lines.append(f"{char}: {item['num']}")
 
     joined_output = "\n".join(char_lines)
     
